@@ -1,0 +1,220 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #F7F9F9;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.head-block{
+    background-color: #6BB2F1;
+    height: 600px;
+}
+.logo{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    color: white;
+    z-index: 999;
+}
+.hiden{
+    max-width:0;
+    opacity: 0;
+    transition: 0.3s ;
+}
+.middle{
+    justify-content: center;
+    display: flex;
+}
+.logo:hover .hiden{
+    opacity: 1;
+    max-width: 1em;
+}
+.header{
+    background: #6BB2F1;
+    padding: 15px 0;
+    height: 35px;
+    display: flex;
+}
+.menu{
+    display: flex;
+    margin: 10px 0;
+    float: right;
+    justify-content: space-around;
+    width: 40%;
+    position: relative;
+    z-index: 999;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: "montserrat";
+    font-weight: bold;
+}
+.search{
+    float: right;
+    margin-top: 3px;
+    z-index: 9999;
+}
+i{
+    color: white;
+    font-size: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.search .input{
+    border: none;
+    background: none;
+    outline: none;
+    height: 25px;
+    width: 190px;   
+    color: white;
+    font-family: "montserrat";
+    z-index: 9999;
+}
+.search form{
+    border: 1px solid white;
+    padding-right: 3px;
+    padding-left: 3px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+.cool-link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+}
+.cool-link:hover::after{
+    width: 90%;
+    transition: width 0.3s;
+}
+::placeholder{
+    color: white;
+    font-family: "montserrat";
+}
+.input:focus ~ .form{
+    border: 1.5px solid black;
+}
+.sect-title{
+    font-family: sans-serif;
+    color: #6BB2F1;
+    font-weight: bold;
+    font-size: 24px;
+    border-left: 3px solid #6BB2F1;
+}
+.services ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+.services ul li {
+    text-align: center;
+    padding: 4px;
+}
+.services ul li img{
+    height: 180px;
+    width: 180px;
+}
+.services ul li h3{
+    margin-top: 0;
+}
+.services ul li a{
+    text-decoration: none;
+    color: #6BB2F1;
+    font-family: "montserrat";
+    font-weight: bold;
+}
+.services ul li p{
+    font-family: "montserrat";
+}
+.about-content{
+    display: flex;
+    margin: 30px 0;
+}
+.about{
+    margin: 35px 0;
+}
+.about-content p{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 0;
+}
+.about-content img{
+    height: 370px;
+    width: 570px;
+}
+footer{
+    background:#6BB2F1;
+    padding: 20px 10px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-logo{
+    margin-top: 40px;
+}
+.foot-logo a{
+    text-decoration: none;
+    font-family: "montserrat";
+    font-weight: bold;
+    color: white;
+    font-size: 55px;
+}
+.foot-services h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: white;
+}
+.foot-services ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.foot-services ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "montserrat";
+    color: white;
+}
+.mail h4{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 0;
+    color: white;
+}
+.mail form input{
+    border: 1px solid white;
+    background: none;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    height: 25px;
+    width: 190px;
+    color: white;
+}
+.mail form button{
+    height: 29px;
+    border-radius: 0px 5px 5px 0px;
+    background: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+.foot-conta
